@@ -66,4 +66,4 @@ console.log("miVariable2", miVariable2);
 console.log("resultado", resultado);
 
 ## PROYECTO DE JAVASCRIPT
---Se trata de una pagina donde promocionamos bolsos realizados a mano con crochet actualmente estos bolsos se venden demasiado por que son artesaniasy a las cuales se les dedica bastante tiempo para que queden perfectos 
+--Se trata de una pagina donde promocionamos bolsos realizados a mano con crochet actualmente estos bolsos se venden demasiado por que son artesaniasy a las cuales se les dedica bastante tiempo para que queden perfectos #tu-repositorio
