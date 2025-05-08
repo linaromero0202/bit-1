@@ -1,5 +1,3 @@
-
-
 html{
     background-color: rgb(173, 168, 168);
     padding: 1%;
@@ -8,8 +6,13 @@ html{
 
 body{
     text-align: center;
-    padding: auto;
+    padding: 2px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    min-height: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(155, 149, 155);
 }  
 
 header{
@@ -18,77 +21,20 @@ header{
     color: rgb(98, 35, 156);
     align-items: center;
     padding: 2px;
-
 }
-
-/*carrusel de imagenes*/
-
-.titulo{
-    text-align: center;
-    font-size: 40px;
-    padding-top: 50px;
-}
-
-.slider-box{
-    width: 1280px;
-    height: auto;
-    margin: 50px auto 0;
-}
-.slider-box ul{
-    display: flex;
-    padding: 0%;
-    width: 90%;
-    animation: slide 20s infinite alternate ease-in-out;
-}
-.slider-box li{
-    width: 100%;
-    list-style: none;
-    position: relative;
-}
-.texto{
-    position: absolute;
-    text-align: center;
-    padding: 0%;
-    top: 250px;
-    color: rgb(18, 18, 18);
-}
-.texto h2{
-    font-size: 15px;
-    margin-bottom:35px;
-}
-.slider-box img{
-    width: 100%;
-
-}
-text2-text3{
-    color: rgb(18, 18, 19);
-    
-}
-/*imgagenes*/
-.logo{
-    font-size: medium;
-    display: flex;
-}
-.logo-img{
-   height: 50px;
-   margin-right: 10px;
-   border-radius: 25px;
-}
-
 /*texto*/
-
 nav{
     font-weight: 0px;
     padding-right: 1px;
      
 }
 nav,a:hover{
-    color: rgb(136, 10, 254);
+    color: rgb(26, 92, 136);
 }
 /*navegacion*/
 a{
-    color: rgba(171, 35, 153, 0.657);
-    padding: 38px;
+    color: rgba(9, 9, 9, 0.657);
+    padding: 40px;
     text-align:center;
     border: 2px;
     text-decoration: none;
@@ -112,20 +58,7 @@ a{
     body{
         padding: 30px;
     }
-    .slider-box{
-        width: 100%;
-    }
-    .texto{
-        top: 50px;
-        padding:0%;
-    }
-    .texto h2{
-        font-size: 35px;
-        margin-bottom: 15px;
-    }
-    .texto p{
-        font-size: 15px;
-    }
+    
     header{
         flex-direction: column;
     }
@@ -140,39 +73,11 @@ a{
     body{
         padding: 30px;
     }
-    .slider-box{
-        width: 100%;
-    }
-    .texto{
-        top: 50px;
-        padding:0%;
-    }
-    .texto h2{
-        font-size: 35px;
-        margin-bottom: 15px;
-    }
-    .texto p{
-        font-size: 15px;
-    }   
+    
 }
 @media (max-width:992px){
     body{
         padding: 30px;
-    }
-    .slider-box{
-        width: 100%;
-    }
-    .texto{
-        top: 50px;
-        padding:0%;
-    }
-    .texto h2{
-        font-size: 35px;
-        margin-bottom: 15px;
-    }
-    .texto p{
-        font-size: 15px;
-    }
     header{
         flex-direction: column;
     }
@@ -181,21 +86,9 @@ a{
     body{
         padding: 30px;
     }
-    .slider-box{
-        width: 100%;
-    }
-    .texto{
-        top: 50px;
-        padding:0%;
-    }
-    .texto h2{
-        font-size: 35px;
-        margin-bottom: 15px;
-    }
-    .texto p{
-        font-size: 15px;
-    }
+   
     header{
         flex-direction: column;
     }
+}
 }
