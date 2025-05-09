@@ -1,59 +1,92 @@
-html{
-    background-color: rgb(173, 168, 168);
-    padding: 1%;
-    text-align: center;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    text-align: center;
-    padding: 2px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    min-height: 1vh;
-    display: flex;
+/* Colores personalizados */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #eee9e9;
+    color: #333;
+    line-height: 3Opx;
+}
+.pagina{display: flex;
+    justify-content:space-around;
     align-items: center;
-    justify-content: center;
-    background-color: rgb(155, 149, 155);
-}  
-
-header{
-    display: flex;
-    min-height: 1px;
-    color: rgb(98, 35, 156);
-    align-items: center;
-    padding: 2px;
+    padding: 1px;
+    background-color: #9B4DFF;
+    color: #7A2EBC;
+    border-radius: 50px;
+    margin: 20px;
+    box-shadow: #131313 0px 0px 10px;
 }
-/*texto*/
-nav{
-    font-weight: 0px;
-    padding-right: 1px;
-     
-}
-nav,a:hover{
-    color: rgb(26, 92, 136);
-}
-/*navegacion*/
-a{
-    color: rgba(9, 9, 9, 0.657);
-    padding: 40px;
-    text-align:center;
-    border: 2px;
+.a{
     text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: large;
+    padding: px;
+    border-radius: 50%;
+    transition:3px;
+    background-color: rgb(150, 120, 211);
+    padding: 10px;
+    margin: 5px;
+    border: solid 2px #7A2EBC;
+}
+.a:hover{
+    background-color: #7A2EBC;
+    color: white;
+    cursor: pointer;
+}
+.text-violeta {
+    color: #9B4DFF;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    padding: 10px;
 }
 
-@keyframes slider{
-   0% {margin-left: 0; }
-   20% {margin-left: 0;}
+.btn-violeta {
+    background-color: #9B4DFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    font-size: large;
+}
 
-   25%{margin-left: -100%;}
-   45% {margin-left: -100%;}
-  
-   50% {margin-left: -200%;}
-   70% {margin-left: -200%;}
+.btn-violeta:hover {
+    background-color: #6508e7;
+    cursor: pointer;
 
-   75% {margin-left: -300%;}
-   100% {margin-left: -300%;}
-} 
-   
+}
+.text-violeta{
+    color: #9B4DFF;
+}
+/* Imágenes */
+img {
+    margin-top: 20px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(red, green, blue);
+    transition:transform 0.3s;;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+}
+   /*enlaces*/
 @media (max-width:576px){
     body{
         padding: 30px;
