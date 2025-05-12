@@ -11,6 +11,7 @@ body {
     background-color: #eee9e9;
     color: #333;
     line-height: 3Opx;
+    height: 100vh;
 }
 h1{
     text-align: center;
@@ -97,6 +98,33 @@ h1{
     border-radius: 8px;
     margin-top: 10px;
 }
+/*estilo normal*/
+.contenido{
+    background-color: rgb(193, 162, 216);
+    color: #333;
+    padding: 20px;
+    font-family: sans-serif;
+}
+/*estilo de modo escrito*/
+.contenido-modo-escrito{
+    background-color: #5e4b8b;
+    color: #f3f3f3;
+    font-family: Georgia, serif;
+    filter: brightness(90%);
+}
+/*redes sociales*/
+.redes-sociales a{
+    margin-right: 10px;
+    color: rgb(245, 246, 246);
+    text-decoration: none;
+    background-color: #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: cubic-bezier(background-color 0.3s);    
+}
+.redes-sociales-a:hover{
+    background-color: #555;;
+}
 /* Imágenes */
 img {
     margin-top: 20px;
@@ -106,7 +134,44 @@ img {
     box-shadow: 0 0 10px rgb(red, green, blue);
     transition:transform 0.3s;;
 }
-
+/*formulario*/
+.formulario-container{
+    background-color: #eae7ef;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rjba(0,0,0,0.1);
+    width: 100%;
+    max-width: 800px;
+}
+form h2{
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    color: #8a3094;
+}
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #7f44a9;
+    color: white;
+    border: #000;border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #42116f;
+}
 /* Responsive ajustes */
 @media (max-width: 768px) {
     header h1 {

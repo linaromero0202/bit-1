@@ -21,11 +21,28 @@
         </nav>
     </header>
     <main>
-        <section class="mb-5">
-            <h1 class="text-violeta">Contáctanos</h1>
-            <p>¿Estás interesado? Contáctanos para agendar una visita personalizada y resolver todas tus dudas.</p>
-            <button class="btn btn-violeta">Enviar mensaje</button>
-        </section>
+
+        <div class="formulario-container">
+            <form action="/contactanos.html" method="post">
+                <h2>Contactanos</h2>
+                <p>¿Estás interesado? Contáctanos para agendar una visita personalizada
+                     y resolver todas tus dudas...</p>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="telefono">Telefono</label>
+            <input type="text" id="telefono" name="telefono" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+            </form>
+        </div>
     </main>
 
     <footer class="bg-black text-white text-center py-3">
