@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,27 +22,49 @@
     </header>
     <main>
 
-        <div class="formulario-container">
-            <form action="/contactanos.html" method="post">
-                <h2>Contactanos</h2>
-                <p>¿Estás interesado? Contáctanos para agendar una visita personalizada
-                     y resolver todas tus dudas...</p>
+         <!-- Mensaje de éxito (inicialmente oculto) -->
+  <div id="alertSuccess" class="alert alert-success d-none" role="alert">
+    ¡Mensaje enviado correctamente!
+  </div>
 
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required>
+  <!-- Formulario -->
+  <form id="contactForm">
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre" required>
+    </div>
+    <div class="mb-3">
+      <label for="correo" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="correo" required>
+    </div>
+    <div class="mb-3">
+      <label for="telefono" class="form-label">Telefono</label>
+      <input type="numero" class="form-control" id="telefono" required>
+    </div>
+    <div class="mb-3">
+      <label for="mensaje" class="form-label">Mensaje</label>
 
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" required>
+       <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
 
-            <label for="telefono">Telefono</label>
-            <input type="text" id="telefono" name="telefono" required>
+<script>
+  const form = document.getElementById('contactForm');
+  const alertSuccess = document.getElementById('alertSuccess');
 
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // Evita el envío real
 
-            <button type="submit">Enviar</button>
-            </form>
-        </div>
+    // Mostrar mensaje de éxito
+    alertSuccess.classList.remove('d-none');
+
+    // Limpiar formulario
+    form.reset();
+  });
+</script>
+
     </main>
 
     <footer class="bg-black text-white text-center py-3">

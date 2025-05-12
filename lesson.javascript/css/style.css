@@ -151,7 +151,7 @@ form h2{
 label{
     display: block;
     margin-bottom: 5px;
-    color: #8a3094;
+    color: #615dac;
 }
 input,textarea{
     width: 100%;
@@ -163,14 +163,20 @@ input,textarea{
 button{
     width: 100%;
     padding: 10px;
-    background-color: #7f44a9;
+    background-color: #46077268;
     color: white;
     border: #000;border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
 }
 button:hover{
-    background-color: #42116f;
+    background-color: #1449bd;
+}
+script{
+    background-color: aqua;
+    color: #6508e7;
+    padding: 10px;
+    border-radius: 10px;
 }
 /* Responsive ajustes */
 @media (max-width: 768px) {
